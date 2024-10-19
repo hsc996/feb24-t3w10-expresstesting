@@ -28,4 +28,24 @@ router.post("/signup", async (request, response) => {
     response.json(receivedUserData);
 });
 
+
+// GET localhost:3000/users/12345
+router.get("/:userid", async (request, response) => {
+    let targetUserId = request.params.userid;
+    // let exampleSomeOtherProperty = request.params.someotherproperty;
+
+
+    // Make a DB query that uses that ID
+    // E.g. let result = await User.findById(targetUserId);
+
+    response.json({
+        result: {
+            id: targetUserId,
+            username: "Placeholder username"
+        }
+    });
+});
+
+
+
 module.exports = router;
