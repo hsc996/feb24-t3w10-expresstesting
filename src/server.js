@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express(); // Make an instance of the express server system
 
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+
 // localhost:3000/
 // domainName:port/
 // serverInstance.verb(path, callback)
