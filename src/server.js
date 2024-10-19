@@ -10,6 +10,9 @@ app.get("/", (request, response) => {
     });
 });
 
+const UserController = require("./controllers/UserControllers.js");
+app.use("/users", UserController);
+
 module.exports = {
     app
 }

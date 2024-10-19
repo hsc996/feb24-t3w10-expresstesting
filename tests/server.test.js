@@ -9,7 +9,7 @@ describe("Root route works", () => {
 
     // Individual test happens in this type of function:
     // This test runs an async callback function
-    // Because the things it si testing are running asynchronously and we need to wait for it
+    // Because the things it is testing are running asynchronously and we need to wait for it
     test("Server returns a 'Hello world!' message", async () => {
         // Make a request to "/" route
         // Wait for response and store it
