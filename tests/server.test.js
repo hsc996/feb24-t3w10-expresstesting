@@ -20,7 +20,7 @@ describe("Root route works", () => {
         expect(response.statusCode).toBe(200);
     });
 
-    test("Server returns a response with no auth ehaders because we are not sending auth data", async () => {
+    test("Server returns a response with no auth headers because we are not sending auth data", async () => {
         const response = await request(app).get("/");
 
         expect(response.header["Authorization"]).toBeFalsy();

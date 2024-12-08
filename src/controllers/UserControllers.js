@@ -23,6 +23,7 @@ router.post("/signup", async (request, response) => {
 
     receivedUserData.password = "EncryptedPassword";
 
+    // this is required to simulate a database operation
     let placeholderDatabaseResult = {...receivedUserData};
 
     response.json(receivedUserData);
